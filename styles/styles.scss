@@ -1,0 +1,169 @@
+$green: #85bf55;
+$blue: #2c7ef8;
+
+* {
+    font-family: "Manrope", sans-serif !important;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #252f3d;
+    ul {
+        color: white;
+        display: flex;
+        font-size: 12px;
+        font-weight: 500;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 1rem 10%;
+        li {
+            display: flex;
+            align-items: center;
+            font-weight: 200;
+            iconify-icon {
+                margin-right: 10px;
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10% 1rem 10% !important;
+}
+
+h1 {
+    margin: 0;
+    font-size: 48px;
+    color: black;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: 200;
+}
+
+h4 {
+    margin: 0;
+    margin-top: 0.5rem;
+    font-size: 24px;
+    color: #4d5254;
+    font-weight: 200;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 200;
+    margin: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.blue {
+    color: $blue;
+}
+
+.steps {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 1rem 10% 0 10%;
+    ul {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    .step {
+        display: flex;
+        align-items: center;
+        span {
+            font-weight: 500;
+        }
+    }
+}
+
+.circle {
+    align-items: center;
+    background-color: white;
+    border: 2px solid $blue;
+    border-radius: 50%;
+    color: $blue;
+    display: flex;
+    font-size: 20px;
+    height: 40px;
+    justify-content: center;
+    margin-right: 1rem;
+    width: 40px;
+    &.checked {
+        iconify-icon {
+            font-size: 30px;
+            color: white;
+        }
+        background-color: $green;
+        border-color: $green;
+    }
+    &.current {
+        color: white;
+        background-color: $blue;
+    }
+}
+
+.card {
+    background-color: #fafafa;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 10% 0 10%;
+    margin-top: 2rem;
+    padding: 2rem;
+    .product {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-right: 1.5rem;
+        img {
+            width: 100%;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            margin: 0;
+            margin-top: 2rem;
+            padding: 1.3rem;
+        }
+    }
+    .description {
+        margin-left: 1.5rem;
+        width: 50%;
+    }
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    img {
+        width: auto !important;
+        margin-right: 0.8rem;
+    }
+    .stars {
+        display: flex;
+        iconify-icon {
+            font-size: 11.95px;
+            color: #fbbc04;
+        }
+    }
+}
