@@ -142,7 +142,7 @@
     justify-content: center;
   }
   .card .description section .payment_methods div {
-    justify-content: start;
+    justify-content: center;
     border: none;
   }
   .card .description section .payment_methods span {
