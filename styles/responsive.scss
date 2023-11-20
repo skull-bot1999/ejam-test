@@ -1,0 +1,225 @@
+@media (max-width: 768px) {
+    .slide {
+        display: none;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul {
+            align-items: center;
+            justify-content: center;
+            height: 1rem;
+        }
+        button.caret {
+            display: block;
+            background: transparent;
+            border: none;
+            color: white;
+            margin: 0 1rem;
+            font-size: 20px;
+        }
+    }
+    body {
+        background-color: #fafafa;
+    }
+    nav {
+        background-color: white;
+        img {
+            height: fit-content;
+            &#clarifion {
+                width: 100px;
+            }
+            &#mcafee {
+                margin-right: 0.7rem;
+                width: 50px;
+            }
+            &#norton {
+                width: 50px;
+            }
+        }
+    }
+    h1 {
+        margin-top: 2rem;
+        font-size: 32px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 16px;
+        padding: 0.8rem;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+    p {
+        font-size: 12px;
+    }
+    .steps {
+        margin: 0;
+        padding: 0 1rem;
+        .step {
+            flex-direction: column;
+            span {
+                font-size: 12px;
+                text-align: center;
+                .step-text {
+                    display: none;
+                }
+            }
+        }
+    }
+    .circle {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+        width: 20px;
+        height: 20px;
+        font-size: 15px;
+        &.checked {
+            iconify-icon {
+                font-size: 20px;
+            }
+        }
+    }
+    .card {
+        margin: 0;
+        flex-direction: column;
+        .product {
+            display: none;
+        }
+        .description {
+            margin: 0;
+            width: 100%;
+            section {
+                .product-header {
+                    img {
+                        height: 80px;
+                    }
+                    .product-info {
+                        width: 100%;
+                        .stars {
+                            margin: 0.75rem 0;
+                            iconify-icon {
+                                font-size: 12px;
+                            }
+                        }
+                        span {
+                            font-weight: 200;
+                            font-size: 12px;
+                            &.blue {
+                                del {
+                                    font-size: 10px;
+                                }
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                ul li {
+                    font-size: 12px;
+                    justify-content: start;
+                    iconify-icon {
+                        font-size: 25px;
+                        font-weight: bold;
+                    }
+                }
+                .card {
+                    margin: 1rem 0;
+                    flex-direction: row;
+                    font-size: 14px;
+                    .circle {
+                        margin-right: 1rem;
+                        margin-bottom: 0;
+                        padding: 5px;
+                        width: 20px;
+                        height: 15px;
+                    }
+                }
+                button {
+                    font-size: 14px;
+                }
+
+                .payment_methods {
+                    flex-direction: column;
+                    justify-content: center;
+                    div {
+                        justify-content: start;
+                        border: none;
+                    }
+                    span {
+                        padding: 0 0.4rem;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    hr {
+                        border: none;
+                        height: 1px;
+                        background-color: #cfcfcf;
+                        display: block;
+                        width: 100%;
+                    }
+                }
+
+                .guarantee {
+                    img {
+                        height: 48px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+    .danger {
+        font-size: 12px;
+    }
+
+    p {
+        &#product-paragraph {
+            display: none;
+        }
+        &#product-paragraph-responsive {
+            display: block;
+            text-align: center;
+            margin-top: 1rem;
+        }
+    }
+
+    footer {
+        padding: 0 1rem;
+        margin-top: 1rem;
+        flex-direction: column;
+        div {
+            margin: 1.5rem 0;
+            display: flex;
+            justify-content: center;
+            span {
+                margin: 0;
+            }
+        }
+        span {
+            font-size: 12px;
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}

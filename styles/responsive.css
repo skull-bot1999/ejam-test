@@ -1,0 +1,209 @@
+@media (max-width: 768px) {
+  .slide {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header ul {
+    align-items: center;
+    justify-content: center;
+    height: 1rem;
+  }
+  header button.caret {
+    display: block;
+    background: transparent;
+    border: none;
+    color: white;
+    margin: 0 1rem;
+    font-size: 20px;
+  }
+  body {
+    background-color: #fafafa;
+  }
+  nav {
+    background-color: white;
+  }
+  nav img {
+    height: fit-content;
+  }
+  nav img#clarifion {
+    width: 100px;
+  }
+  nav img#mcafee {
+    margin-right: 0.7rem;
+    width: 50px;
+  }
+  nav img#norton {
+    width: 50px;
+  }
+  h1 {
+    margin-top: 2rem;
+    font-size: 32px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 16px;
+    padding: 0.8rem;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .steps {
+    margin: 0;
+    padding: 0 1rem;
+  }
+  .steps .step {
+    flex-direction: column;
+  }
+  .steps .step span {
+    font-size: 12px;
+    text-align: center;
+  }
+  .steps .step span .step-text {
+    display: none;
+  }
+  .circle {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+  }
+  .circle.checked iconify-icon {
+    font-size: 20px;
+  }
+  .card {
+    margin: 0;
+    flex-direction: column;
+  }
+  .card .product {
+    display: none;
+  }
+  .card .description {
+    margin: 0;
+    width: 100%;
+  }
+  .card .description section .product-header img {
+    height: 80px;
+  }
+  .card .description section .product-header .product-info {
+    width: 100%;
+  }
+  .card .description section .product-header .product-info .stars {
+    margin: 0.75rem 0;
+  }
+  .card .description section .product-header .product-info .stars iconify-icon {
+    font-size: 12px;
+  }
+  .card .description section .product-header .product-info span {
+    font-weight: 200;
+    font-size: 12px;
+  }
+  .card .description section .product-header .product-info span.blue {
+    font-size: 14px;
+  }
+  .card .description section .product-header .product-info span.blue del {
+    font-size: 10px;
+  }
+  .card .description section ul li {
+    font-size: 12px;
+    justify-content: start;
+  }
+  .card .description section ul li iconify-icon {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .card .description section .card {
+    margin: 1rem 0;
+    flex-direction: row;
+    font-size: 14px;
+  }
+  .card .description section .card .circle {
+    margin-right: 1rem;
+    margin-bottom: 0;
+    padding: 5px;
+    width: 20px;
+    height: 15px;
+  }
+  .card .description section button {
+    font-size: 14px;
+  }
+  .card .description section .payment_methods {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card .description section .payment_methods div {
+    justify-content: start;
+    border: none;
+  }
+  .card .description section .payment_methods span {
+    padding: 0 0.4rem;
+    display: flex;
+    justify-content: center;
+  }
+  .card .description section .payment_methods hr {
+    border: none;
+    height: 1px;
+    background-color: #cfcfcf;
+    display: block;
+    width: 100%;
+  }
+  .card .description section .guarantee img {
+    height: 48px;
+    width: auto;
+  }
+  .danger {
+    font-size: 12px;
+  }
+  p#product-paragraph {
+    display: none;
+  }
+  p#product-paragraph-responsive {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  footer {
+    padding: 0 1rem;
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+  footer div {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  footer div span {
+    margin: 0;
+  }
+  footer span {
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

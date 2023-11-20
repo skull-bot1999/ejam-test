@@ -10,52 +10,71 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
             rel="stylesheet"
         />
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
         <!-- My styles -->
         <link rel="stylesheet" href="./styles/styles.css" />
+        <link rel="stylesheet" href="./styles/responsive.css" />
 
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     </head>
     <body>
         <!-- HEADER -->
         <header>
+            <button class="caret" onclick="plusSlides(-1)">
+                <iconify-icon icon="ph:caret-left-bold"></iconify-icon>
+            </button>
+
             <ul>
-                <li>
+                <li class="slide fade">
                     <iconify-icon
                         icon="fluent:checkmark-starburst-20-regular"
                     ></iconify-icon
                     >30-DAY SATISFACTION GUARANTEE
                 </li>
-                <li>
+                <li class="slide fade">
                     <iconify-icon icon="ph:truck-light"></iconify-icon>Free
                     delivery on orders over $40.00
                 </li>
-                <li>
+                <li class="slide fade">
                     <iconify-icon icon="mdi:cards-heart-outline"></iconify-icon
                     >50.000+ HAPPY CUSTOMERS
                 </li>
-                <li>
+                <li class="slide fade">
                     <iconify-icon
                         icon="fluent:arrow-sync-checkmark-20-regular"
                     ></iconify-icon
                     >100% Money Back Guarantee
                 </li>
             </ul>
+            <button class="caret" onclick="plusSlides(+1)">
+                <iconify-icon icon="ph:caret-right-bold"></iconify-icon>
+            </button>
         </header>
 
         <!-- NAVBAR -->
         <nav>
             <a href="#"
-                ><img src="./images/clarifion.png" alt="clarifion logo"
+                ><img
+                    id="clarifion"
+                    src="./images/clarifion.png"
+                    alt="clarifion logo"
             /></a>
             <div>
-                <a href="#" style="margin-right: 2rem"
-                    ><img src="./images/mcafee.png" alt="mcafee logo"
+                <a href="#"
+                    ><img
+                        id="mcafee"
+                        src="./images/mcafee.png"
+                        alt="mcafee logo"
                 /></a>
                 <a href="#"
                     ><img
+                        id="norton"
                         src="./images/norton-antivirus-logo 1.png"
                         alt="norton logo"
                 /></a>
@@ -74,21 +93,34 @@
                     <div class="circle checked">
                         <iconify-icon icon="ion:checkmark"></iconify-icon>
                     </div>
-                    <span>Step 1 : Cart Review</span>
+                    <span
+                        ><span class="step-text">Step 1 : </span>Cart
+                        Review</span
+                    >
                 </li>
                 <li class="step">
                     <div class="circle checked">
                         <iconify-icon icon="ion:checkmark"></iconify-icon>
                     </div>
-                    <span>Step 2 : Checkout</span>
+                    <span
+                        ><span class="step-text">Step 2 : </span>Checkout</span
+                    >
                 </li>
                 <li class="step">
                     <div class="circle current">3</div>
-                    <span><b>Step 3 : Special Offer</b></span>
+                    <span
+                        ><b
+                            ><span class="step-text">Step 3 : </span>Special
+                            Offer</b
+                        ></span
+                    >
                 </li>
                 <li class="step">
                     <div class="circle">4</div>
-                    <span>Step 4 : Confirmation</span>
+                    <span
+                        ><span class="step-text">Step 4 : </span
+                        >Confirmation</span
+                    >
                 </li>
             </ul>
         </section>
@@ -118,7 +150,13 @@
                                     icon="ion:star-sharp"
                                 ></iconify-icon>
                             </div>
-                            <span><b>Ken T.</b> Verified Customer</span>
+                            <span
+                                ><b>Ken T.</b
+                                ><iconify-icon
+                                    icon="fluent:checkmark-starburst-20-filled"
+                                ></iconify-icon>
+                                Verified Customer</span
+                            >
                         </div>
                     </div>
                     <p>
@@ -129,14 +167,125 @@
                     </p>
                 </div>
             </div>
+
+            <!-- Product description section -->
             <div class="description">
                 <h2>
                     <span class="blue">ONE TIME ONLY</span> special price for 6
                     extra Clarifion for only
                     <span class="blue">$14 each</span> ($84.00 total!)
                 </h2>
+                <section>
+                    <div class="product-header">
+                        <img src="./images/clarifion mini.png" />
+                        <div class="product-info">
+                            <div class="price">
+                                <h5>Clarifion Air Ionizer</h5>
+                                <span class="blue"><del>$180</del>$84</span>
+                            </div>
+                            <div class="stars">
+                                <iconify-icon
+                                    icon="bi:star-fill"
+                                ></iconify-icon>
+                                <iconify-icon
+                                    icon="bi:star-fill"
+                                ></iconify-icon>
+                                <iconify-icon
+                                    icon="bi:star-fill"
+                                ></iconify-icon>
+                                <iconify-icon
+                                    icon="bi:star-fill"
+                                ></iconify-icon>
+                                <iconify-icon
+                                    icon="bi:star-fill"
+                                ></iconify-icon>
+                            </div>
+                            <span
+                                ><div class="double-circle"></div>
+                                12 left in Stock</span
+                            >
+                            <p id="product-paragraph">
+                                Simply plug a Clarifion into any standard outlet
+                                and replace bulky, expensive air purifiers with
+                                a simple.
+                            </p>
+                        </div>
+                    </div>
+                    <p id="product-paragraph-responsive">
+                        Simply plug a Clarifion into any standard outlet and
+                        replace bulky, expensive air purifiers with a simple.
+                    </p>
+                    <ul>
+                        <li>
+                            <iconify-icon icon="ion:checkmark"></iconify-icon
+                            >Negative Ion Technology may<b
+                                >&nbsp;help with allergens</b
+                            >
+                        </li>
+                        <li>
+                            <iconify-icon icon="ion:checkmark"></iconify-icon
+                            >Designed for<b>&nbsp;air rejuvenation</b>
+                        </li>
+                        <li>
+                            <iconify-icon icon="ion:checkmark"></iconify-icon
+                            ><b>Perfect for every room</b>&nbsp;in all types of
+                            places.
+                        </li>
+                    </ul>
+                    <div class="card">
+                        <div class="circle current">%</div>
+                        <div>
+                            Save <span class="blue">53%</span> and get
+                            <span class="blue">6 extra Clarifision</span> for
+                            only <span class="blue">$14 Each</span>.
+                        </div>
+                    </div>
+                    <button type="button">
+                        YES - CLAIM MY DISCOUNT
+                        <iconify-icon icon="maki:arrow"></iconify-icon>
+                    </button>
+                    <div class="payment_methods">
+                        <div>
+                            <span>Free shipping</span>
+                            <span
+                                ><iconify-icon
+                                    icon="iconoir:lock"
+                                ></iconify-icon
+                                >Secure 256-bit SSL encryption.</span
+                            >
+                        </div>
+                        <hr />
+                        <span><img src="./images/payment_methods.png" /></span>
+                    </div>
+                    <a href="#">
+                        <h3 class="danger text-center">
+                            No thanks, I don't want this.
+                        </h3>
+                    </a>
+                    <div class="guarantee">
+                        <img src="./images/guarantee.png" />
+                        <p>
+                            If you are not completely thrilled with your
+                            Clarifion - We have a
+                            <b>30 day satisfaction guarantee</b>. Please refer
+                            to our return policy at the bottom of the page for
+                            more details. Happy Shopping!
+                        </p>
+                    </div>
+                </section>
             </div>
         </section>
+
+        <footer>
+            <div>
+                <span>Copyright (c) 2023</span>
+                <span>Clarifionsupport@clarifion.com</span>
+            </div>
+            <span
+                ><iconify-icon icon="iconoir:lock"></iconify-icon>Secure 256-bit
+                SSL encryption.</span
+            >
+        </footer>
 
         <!-- SCRIPTS -->
         <script
@@ -145,5 +294,7 @@
             crossorigin="anonymous"
         ></script>
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+        <!-- MIS SCRIPTS -->
+        <script src="./scripts/scripts.js"></script>
     </body>
 </html>
